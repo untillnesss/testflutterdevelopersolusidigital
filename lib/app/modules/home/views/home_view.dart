@@ -24,6 +24,7 @@ class HomeView extends StatelessWidget {
             const AppDivider(),
             HomeSlider(carouselController: carouselController),
             const AppDivider(),
+            
           ],
         ),
       ),

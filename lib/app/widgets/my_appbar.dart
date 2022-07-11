@@ -9,6 +9,8 @@ class MyAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
+      pinned: true,
+      floating: true,
       backgroundColor: Colors.white,
       elevation: 0,
       title: Image.asset(AppAssets.MAIN_LOGO),
@@ -35,33 +37,42 @@ class MyAppBar extends StatelessWidget {
         ),
       ],
       bottom: PreferredSize(
-        preferredSize: Size(MediaQuery.of(context).size.width, 50),
-        child: Row(
-          children: [
-            Expanded(
-              child: Container(
-                decoration: BoxDecoration(
-                  color: AppColors.greyLightest,
-                  borderRadius: BorderRadius.circular(100),
-                  border: Border.all(color: AppColors.greyLight),
-                ),
-                margin: const EdgeInsets.symmetric(
-                  horizontal: kFloatingActionButtonMargin,
-                ),
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 18,
-                ),
-                child: TextFormField(
-                  scrollPadding: EdgeInsets.zero,
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.zero,
-                    border: InputBorder.none,
-                    hintText: AppString.searchHint,
+        preferredSize: Size(MediaQuery.of(context).size.width, 62),
+        child: Container(
+          color: Colors.white,
+          child: Column(
+            children: [
+              const AppSpacing(height: 6),
+              Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: AppColors.greyLightest,
+                        borderRadius: BorderRadius.circular(100),
+                        border: Border.all(color: AppColors.greyLight),
+                      ),
+                      margin: const EdgeInsets.symmetric(
+                        horizontal: kFloatingActionButtonMargin,
+                      ),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 18,
+                      ),
+                      child: TextFormField(
+                        scrollPadding: EdgeInsets.zero,
+                        decoration: const InputDecoration(
+                          contentPadding: EdgeInsets.zero,
+                          border: InputBorder.none,
+                          hintText: AppString.searchHint,
+                        ),
+                      ),
+                    ),
                   ),
-                ),
+                ],
               ),
-            ),
-          ],
+              const AppSpacing(height: 6),
+            ],
+          ),
         ),
       ),
     );

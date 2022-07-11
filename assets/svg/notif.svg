@@ -1,0 +1,20 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 29" width="28" height="29">
+	<title>Beranda</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m-60-429h375v812h-375z"/>
+		</clipPath>
+	</defs>
+	<style>
+		.s0 { fill: #ffffff } 
+	</style>
+	<g id="Beranda" clip-path="url(#cp1)">
+		<g id="notification">
+			<g id="-e-Group 11">
+				<g id="Group 10">
+					<path id="Path 32" class="s0" d="m27 27.8c-0.1 0.2-0.3 0.3-0.6 0.3h-24.7c-0.3 0-0.5-0.1-0.6-0.3-0.1-0.2-0.1-0.4 0-0.7l2.2-3.7c1.1-1.7 1.6-3.7 1.6-5.7v-3.3c0-4.1 2.8-7.6 6.5-8.7v-2.3c0-1.5 1.2-2.7 2.6-2.7 1.5 0 2.6 1.2 2.6 2.7v2.3c3.8 1.1 6.6 4.6 6.6 8.7v3.3c0 2 0.5 4 1.6 5.7l2.2 3.7c0.1 0.3 0.1 0.5 0 0.7z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

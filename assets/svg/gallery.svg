@@ -1,0 +1,23 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" width="29" height="29">
+	<title>Beranda</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m-288-330h375v812h-375z"/>
+		</clipPath>
+	</defs>
+	<style>
+		.s0 { fill: #ffffff } 
+	</style>
+	<g id="Beranda" clip-path="url(#cp1)">
+		<g id="Group 15">
+			<g id="Group 14">
+				<g id="-e-image-gallery">
+					<g id="Group 57">
+						<path id="Path 929" class="s0" d="m9.3 24.6h12v1.8c0 1.4-1.2 2.5-2.5 2.5h-16.3c-1.4 0-2.5-1.1-2.5-2.5v-16.3c0-1.4 1.1-2.5 2.5-2.5h1.8v12.1c0 2.7 2.2 4.9 5 4.9z"/>
+						<path id="Path 930" fill-rule="evenodd" class="s0" d="m28 3.4v16.3c0 1.3-1.1 2.4-2.4 2.4h-16.3c-1.4 0-2.5-1.1-2.5-2.4v-16.3c0-1.4 1.1-2.5 2.5-2.5h16.3c1.3 0 2.4 1.1 2.4 2.5zm-2.8 14.1l-2.6-3.9c-0.2-0.3-0.4-0.5-0.8-0.6-0.3 0-0.6 0-0.9 0.2l-2.5 1.8c-0.6 0.3-1.3 0.2-1.7-0.3l-2.8-3.9c-0.2-0.4-0.7-0.6-1.1-0.5-0.5 0-0.8 0.4-1 0.8l-2 6.6c0 0.2 0 0.5 0.1 0.7 0.2 0.2 0.4 0.3 0.7 0.3h13.9c0.3 0 0.6-0.1 0.7-0.4 0.2-0.3 0.1-0.6 0-0.8z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

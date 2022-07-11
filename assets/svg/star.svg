@@ -1,0 +1,14 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 31" width="32" height="31">
+	<title>Beranda</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m-172-428h375v812h-375z"/>
+		</clipPath>
+	</defs>
+	<style>
+		.s0 { fill: #ffffff } 
+	</style>
+	<g id="Beranda" clip-path="url(#cp1)">
+		<path id="-e-ic_grade_24px" class="s0" d="m6.3 30.2l2.5-10.9-8.4-7.3 11.1-1 4.3-10.3 4.4 10.3 11.1 1-8.4 7.3 2.5 10.9-9.6-5.8z"/>
+	</g>
+</svg>

@@ -96,12 +96,7 @@ class ListNews extends StatelessWidget {
               Article? article =
                   homeProvider.newsResponseModel?.articles?.elementAt(index);
 
-              return NewsCard(
-                title: article?.title,
-                source: article?.source?.name,
-                description: article?.description,
-                image: article?.urlToImage,
-              );
+              return NewsCard(news: article);
             },
           ),
         );

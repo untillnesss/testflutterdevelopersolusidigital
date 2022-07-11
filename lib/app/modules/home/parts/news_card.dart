@@ -1,3 +1,4 @@
+import 'package:testflutterdevelopersolusidigital/app/models/news_response_model.dart';
 import 'package:testflutterdevelopersolusidigital/app/routes/route_name.dart';
 import 'package:testflutterdevelopersolusidigital/app_theme.dart';
 import 'package:testflutterdevelopersolusidigital/exports.dart';
@@ -5,16 +6,11 @@ import 'package:expandable_text/expandable_text.dart';
 import 'package:intl/intl.dart';
 
 class NewsCard extends StatelessWidget {
-  final String? title, source, description, image;
-  final DateTime? date;
+  final Article? news;
 
   const NewsCard({
     Key? key,
-    this.title = '-',
-    this.source = '-',
-    this.description = '-',
-    this.image,
-    this.date,
+    this.news,
   }) : super(key: key);
 
   @override
@@ -24,7 +20,11 @@ class NewsCard extends StatelessWidget {
       children: [
         GestureDetector(
           onTap: () {
-            Navigator.pushNamed(context, RouteName.NEWS);
+            Navigator.pushNamed(
+              context,
+              RouteName.NEWS,
+              arguments: this.news,
+            );
           },
           child: ClipRRect(
             borderRadius: BorderRadius.circular(14),
@@ -38,7 +38,8 @@ class NewsCard extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(14),
                 child: Image.network(
-                  this.image ?? 'https://picsum.photos/seed/picsum/300/200',
+                  this.news?.urlToImage ??
+                      'https://picsum.photos/seed/picsum/300/200',
                   fit: BoxFit.cover,
                   errorBuilder: (context, _, __) => Container(
                     color: AppColors.greyLightest,
@@ -56,7 +57,7 @@ class NewsCard extends StatelessWidget {
             children: [
               const AppSpacing(height: 12),
               Text(
-                this.title ?? '-',
+                this.news?.title ?? '-',
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: const TextStyle(
@@ -65,7 +66,7 @@ class NewsCard extends StatelessWidget {
               ),
               const AppSpacing(height: 4),
               Text(
-                'Sumber : ${this.source}',
+                'Sumber : ${this.news?.title}',
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: const TextStyle(
@@ -75,17 +76,17 @@ class NewsCard extends StatelessWidget {
               ),
               Text(
                 DateFormat('yMMMEd')
-                    .format(this.date ?? DateTime.now()),
+                    .format(this.news?.publishedAt ?? DateTime.now()),
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 14,
                   color: Colors.grey,
                 ),
               ),
               const AppSpacing(height: 12),
               ExpandableText(
-                this.description ?? '',
+                this.news?.description ?? '',
                 maxLines: 3,
                 style: const TextStyle(),
                 expandText: 'Baca Selengkapnya ...',

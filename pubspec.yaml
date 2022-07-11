@@ -49,6 +49,11 @@ dev_dependencies:
   google_fonts: ^3.0.1
   flutter_svg: ^1.0.3
   smooth_page_indicator: ^1.0.0+2
+  
+  expandable_text:
+    git:
+      url: https://github.com/untillnesss/expandable_text.git
+      ref: null-safety
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

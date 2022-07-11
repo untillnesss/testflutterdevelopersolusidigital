@@ -57,6 +57,7 @@ class HomeSlider extends StatelessWidget {
             ), // your preferred effect
             onDotClicked: (index) {},
           ),
+          const AppSpacing(height: 12),
         ],
       ),
     );

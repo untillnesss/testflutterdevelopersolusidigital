@@ -6,4 +6,5 @@ class AppString {
   static const String namaDokter = 'dr. Rina Agustina';
   static const String klinikAnda = 'Klink / RS Anda';
   static const String klinkRs = 'RS. National Hospital';
+  static const String news = 'Berita';
 }

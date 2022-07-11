@@ -1,5 +1,3 @@
-import 'package:testflutterdevelopersolusidigital/app/modules/home/parts/circular_progress.dart';
-import 'package:testflutterdevelopersolusidigital/app_string.dart';
 import 'package:testflutterdevelopersolusidigital/app_theme.dart';
 import 'package:testflutterdevelopersolusidigital/exports.dart';
 import 'package:testflutterdevelopersolusidigital/helper.dart';

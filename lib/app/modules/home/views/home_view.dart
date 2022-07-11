@@ -1,25 +1,29 @@
 import 'package:testflutterdevelopersolusidigital/app/modules/home/parts/card_info_antrian.dart';
-import 'package:testflutterdevelopersolusidigital/app/modules/home/parts/circular_progress.dart';
 import 'package:testflutterdevelopersolusidigital/app/modules/home/parts/home_menu.dart';
+import 'package:testflutterdevelopersolusidigital/app/modules/home/parts/home_slider.dart';
+import 'package:testflutterdevelopersolusidigital/app/widgets/app_divider.dart';
 import 'package:testflutterdevelopersolusidigital/app/widgets/my_appbar.dart';
 import 'package:testflutterdevelopersolusidigital/app/widgets/unfocus.dart';
-import 'package:testflutterdevelopersolusidigital/app_string.dart';
-import 'package:testflutterdevelopersolusidigital/app_theme.dart';
 import 'package:testflutterdevelopersolusidigital/exports.dart';
-import 'package:testflutterdevelopersolusidigital/helper.dart';
 
 class HomeView extends StatelessWidget {
-  const HomeView({Key? key}) : super(key: key);
+  HomeView({Key? key}) : super(key: key);
+
+  final PageController carouselController = PageController();
 
   @override
   Widget build(BuildContext context) {
-    return const Unfocus(
+    return Unfocus(
       child: Scaffold(
         body: CustomScrollView(
+          physics: const AlwaysScrollableScrollPhysics(),
           slivers: [
-            MyAppBar(),
-            CardInfoAntrian(),
-            HomeMenu(),
+            const MyAppBar(),
+            const CardInfoAntrian(),
+            const HomeMenu(),
+            const AppDivider(),
+            HomeSlider(carouselController: carouselController),
+            const AppDivider(),
           ],
         ),
       ),

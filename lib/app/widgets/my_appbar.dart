@@ -13,7 +13,7 @@ class MyAppBar extends StatelessWidget {
       floating: true,
       backgroundColor: Colors.white,
       elevation: 0,
-      title: Image.asset(AppAssets.MAIN_LOGO),
+      title: Image.asset(AppAssets.mainLogo),
       actions: [
         Padding(
           padding: const EdgeInsets.symmetric(

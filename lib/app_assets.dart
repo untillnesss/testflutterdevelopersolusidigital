@@ -1,5 +1,5 @@
 class AppAssets {
-  static const String MAIN_LOGO = 'assets/images/mediplus.png';
+  static const String mainLogo = 'assets/images/mediplus.png';
 
   static const String gallery = 'assets/svg/gallery.svg';
   static const String hospital = 'assets/svg/hospital.svg';

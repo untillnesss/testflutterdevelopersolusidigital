@@ -20,7 +20,7 @@ class HomeProvider extends ChangeNotifier {
       this.newsResponseModel = NewsResponseModel.fromJson(res.body);
       this.homeStates = HomeStates.standby;
       notifyListeners();
-    } on Exception catch (e) {
+    } on Exception {
       this.homeStates = HomeStates.empty;
       notifyListeners();
     }

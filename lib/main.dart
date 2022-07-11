@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testflutterdevelopersolusidigital/app/modules/home/providers/home_provider.dart';
-import 'package:testflutterdevelopersolusidigital/app/modules/home/views/home_view.dart';
 import 'package:testflutterdevelopersolusidigital/app/routes/app_route.dart';
 import 'package:testflutterdevelopersolusidigital/app/routes/route_name.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -20,7 +18,7 @@ class MyApp extends StatelessWidget {
       create: (BuildContext context) => HomeProvider(),
       child: MaterialApp(
         routes: AppRoute.routes(),
-        initialRoute: RouteName.HOME,
+        initialRoute: RouteName.home,
         theme: ThemeData(
           fontFamily: GoogleFonts.rubik().fontFamily,
         ),

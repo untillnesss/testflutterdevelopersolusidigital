@@ -22,7 +22,7 @@ class NewsCard extends StatelessWidget {
           onTap: () {
             Navigator.pushNamed(
               context,
-              RouteName.NEWS,
+              RouteName.news,
               arguments: this.news,
             );
           },

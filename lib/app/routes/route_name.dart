@@ -1,4 +1,5 @@
+
 class RouteName {
-  static const HOME = '/';
-  static const NEWS = '/news';
+  static const home = '/';
+  static const news = '/news';
 }

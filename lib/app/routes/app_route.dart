@@ -5,7 +5,7 @@ import 'package:testflutterdevelopersolusidigital/app/routes/route_name.dart';
 
 class AppRoute {
   static Map<String, Widget Function(BuildContext)> routes() => {
-        RouteName.HOME: (context) => HomeView(),
-        RouteName.NEWS: (context) => NewsView(),
+        RouteName.home: (context) => const HomeView(),
+        RouteName.news: (context) => const NewsView(),
       };
 }
